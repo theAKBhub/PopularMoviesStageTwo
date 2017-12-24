@@ -7,7 +7,7 @@
     android:layout_height="match_parent"
     android:fillViewport="true"
     android:background="@color/colorBackground"
-    tools:context="com.example.android.popularmoviesstageone.DetailActivity">
+    tools:context="com.example.android.popularmoviesstagetwo.DetailActivity">
 
     <LinearLayout
         android:layout_width="match_parent"

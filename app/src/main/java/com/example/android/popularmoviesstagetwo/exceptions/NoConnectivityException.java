@@ -1,4 +1,4 @@
-package com.example.android.popularmoviesstageone.exceptions;
+package com.example.android.popularmoviesstagetwo.exceptions;
 
 import java.io.IOException;
 

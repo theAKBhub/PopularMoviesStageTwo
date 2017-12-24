@@ -1,4 +1,4 @@
-package com.example.android.popularmoviesstageone;
+package com.example.android.popularmoviesstagetwo;
 
 import android.app.Dialog;
 import android.content.Context;
@@ -19,18 +19,15 @@ import android.widget.Button;
 import android.widget.ProgressBar;
 import android.widget.TextView;
 import android.widget.Toast;
-
-import com.example.android.popularmoviesstageone.adapters.MovieListAdapter;
-import com.example.android.popularmoviesstageone.controllers.MovieApiController;
-import com.example.android.popularmoviesstageone.controllers.MovieApiInterface;
-import com.example.android.popularmoviesstageone.exceptions.NoConnectivityException;
-import com.example.android.popularmoviesstageone.models.Movie;
-import com.example.android.popularmoviesstageone.models.MovieResponse;
-import com.example.android.popularmoviesstageone.utils.BuildConfig;
-import com.example.android.popularmoviesstageone.utils.Utils;
-
+import com.example.android.popularmoviesstagetwo.adapters.MovieListAdapter;
+import com.example.android.popularmoviesstagetwo.controllers.MovieApiController;
+import com.example.android.popularmoviesstagetwo.controllers.MovieApiInterface;
+import com.example.android.popularmoviesstagetwo.exceptions.NoConnectivityException;
+import com.example.android.popularmoviesstagetwo.models.Movie;
+import com.example.android.popularmoviesstagetwo.models.MovieResponse;
+import com.example.android.popularmoviesstagetwo.utils.BuildConfig;
+import com.example.android.popularmoviesstagetwo.utils.Utils;
 import java.util.List;
-
 import retrofit2.Call;
 import retrofit2.Callback;
 import retrofit2.Response;

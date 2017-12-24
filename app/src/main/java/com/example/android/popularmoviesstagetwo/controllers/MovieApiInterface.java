@@ -1,7 +1,7 @@
-package com.example.android.popularmoviesstageone.controllers;
+package com.example.android.popularmoviesstagetwo.controllers;
 
-import com.example.android.popularmoviesstageone.models.Movie;
-import com.example.android.popularmoviesstageone.models.MovieResponse;
+import com.example.android.popularmoviesstagetwo.models.Movie;
+import com.example.android.popularmoviesstagetwo.models.MovieResponse;
 
 import retrofit2.Call;
 import retrofit2.http.GET;

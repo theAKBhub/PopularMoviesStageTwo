@@ -1,10 +1,10 @@
-package com.example.android.popularmoviesstageone.controllers;
+package com.example.android.popularmoviesstagetwo.controllers;
 
 import android.content.Context;
 
-import com.example.android.popularmoviesstageone.exceptions.NoConnectivityException;
-import com.example.android.popularmoviesstageone.utils.BuildConfig;
-import com.example.android.popularmoviesstageone.utils.Utils;
+import com.example.android.popularmoviesstagetwo.exceptions.NoConnectivityException;
+import com.example.android.popularmoviesstagetwo.utils.BuildConfig;
+import com.example.android.popularmoviesstagetwo.utils.Utils;
 
 import java.util.concurrent.TimeUnit;
 

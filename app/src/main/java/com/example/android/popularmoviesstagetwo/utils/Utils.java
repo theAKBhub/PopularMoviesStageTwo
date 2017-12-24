@@ -1,4 +1,4 @@
-package com.example.android.popularmoviesstageone.utils;
+package com.example.android.popularmoviesstagetwo.utils;
 
 import android.content.Context;
 import android.graphics.Typeface;
@@ -8,7 +8,7 @@ import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
 
-import com.example.android.popularmoviesstageone.R;
+import com.example.android.popularmoviesstagetwo.R;
 
 import java.util.Locale;
 

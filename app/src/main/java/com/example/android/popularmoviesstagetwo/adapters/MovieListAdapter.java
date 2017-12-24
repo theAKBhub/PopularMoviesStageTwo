@@ -1,4 +1,4 @@
-package com.example.android.popularmoviesstageone.adapters;
+package com.example.android.popularmoviesstagetwo.adapters;
 
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
@@ -7,11 +7,13 @@ import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ImageView;
 
-import com.example.android.popularmoviesstageone.R;
-import com.example.android.popularmoviesstageone.models.Movie;
-import com.example.android.popularmoviesstageone.models.MovieResponse;
-import com.example.android.popularmoviesstageone.utils.BuildConfig;
-import com.example.android.popularmoviesstageone.utils.Utils;
+import butterknife.BindView;
+import butterknife.ButterKnife;
+import com.example.android.popularmoviesstagetwo.R;
+import com.example.android.popularmoviesstagetwo.models.Movie;
+import com.example.android.popularmoviesstagetwo.models.MovieResponse;
+import com.example.android.popularmoviesstagetwo.utils.BuildConfig;
+import com.example.android.popularmoviesstagetwo.utils.Utils;
 import com.squareup.picasso.Picasso;
 
 import java.util.List;
@@ -52,11 +54,11 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
 
     public class MovieListAdapterViewHolder extends RecyclerView.ViewHolder implements View.OnClickListener {
 
-        private final ImageView mImageViewPoster;
+        @BindView(R.id.image_movie_poster) ImageView mImageViewPoster;
 
         private MovieListAdapterViewHolder(View view) {
             super(view);
-            mImageViewPoster = view.findViewById(R.id.image_movie_poster);
+            ButterKnife.bind(this, view);
             view.setOnClickListener(this);
         }
 
@@ -106,10 +108,11 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
             moviePoster = movie.getPosterPath();
             if (!Utils.isEmptyString(moviePoster)) {
                 moviePosterUrl = BuildConfig.MOVIE_POSTER_BASE_URL + moviePoster;
-                Picasso.with(mContext).load(moviePosterUrl).into(movieListAdapterViewHolder.mImageViewPoster);
+                Picasso.with(mContext)
+                    .load(moviePosterUrl)
+                    .into(movieListAdapterViewHolder.mImageViewPoster);
             }
         }
-
     }
 
     /**

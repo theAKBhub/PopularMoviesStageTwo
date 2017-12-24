@@ -1,4 +1,4 @@
-package com.example.android.popularmoviesstageone.utils;
+package com.example.android.popularmoviesstagetwo.utils;
 
 /**
  * This class is used to store global constants used throughout the app

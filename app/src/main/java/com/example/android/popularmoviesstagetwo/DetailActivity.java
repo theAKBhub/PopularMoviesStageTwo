@@ -1,4 +1,4 @@
-package com.example.android.popularmoviesstageone;
+package com.example.android.popularmoviesstagetwo;
 
 import android.content.Context;
 import android.content.Intent;
@@ -11,9 +11,9 @@ import android.view.animation.AnimationUtils;
 import android.widget.ImageView;
 import android.widget.TextView;
 
-import com.example.android.popularmoviesstageone.models.Movie;
-import com.example.android.popularmoviesstageone.utils.BuildConfig;
-import com.example.android.popularmoviesstageone.utils.Utils;
+import com.example.android.popularmoviesstagetwo.models.Movie;
+import com.example.android.popularmoviesstagetwo.utils.BuildConfig;
+import com.example.android.popularmoviesstagetwo.utils.Utils;
 import com.squareup.picasso.Picasso;
 
 
