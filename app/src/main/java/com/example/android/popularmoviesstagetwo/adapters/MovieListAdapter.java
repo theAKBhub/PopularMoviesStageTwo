@@ -110,6 +110,8 @@ public class MovieListAdapter extends RecyclerView.Adapter<MovieListAdapter.Movi
                 moviePosterUrl = BuildConfig.MOVIE_POSTER_BASE_URL + moviePoster;
                 Picasso.with(mContext)
                     .load(moviePosterUrl)
+                    .placeholder(R.drawable.image_placeholder)
+                    .error(R.drawable.no_image_placeholder)
                     .into(movieListAdapterViewHolder.mImageViewPoster);
             }
         }
