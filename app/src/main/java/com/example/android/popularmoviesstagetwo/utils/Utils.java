@@ -4,12 +4,14 @@ import android.content.Context;
 import android.graphics.Typeface;
 import android.net.ConnectivityManager;
 import android.net.NetworkInfo;
+import android.util.Log;
 import android.view.View;
 import android.widget.TextView;
 import android.widget.Toast;
-
 import com.example.android.popularmoviesstagetwo.R;
-
+import java.text.ParseException;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import java.util.Locale;
 
 /**
@@ -20,13 +22,14 @@ import java.util.Locale;
 public class Utils {
 
     public static final String LOG_TAG = Utils.class.getSimpleName();
+    public static final String DATE_FORMAT_FROM = "yyyy-MM-dd";
+    public static final String DATE_FORMAT_TO = "dd MMMM yyyy";
 
     /**
      * This is a private constructor and only meant to hold static variables and methods,
      * which can be accessed directly from the class name Utils
      */
-    private void Utils() {
-    }
+    private void Utils() {}
 
 
     /**
@@ -69,7 +72,7 @@ public class Utils {
 
 
     /**
-     * Method to set custom typeface to UI elements
+     * Utility method to set custom typeface to UI elements
      */
     public static void setCustomTypeface(Context context, View view) {
         Typeface typefaceRegular = Typeface.createFromAsset(context.getAssets(),
@@ -96,7 +99,7 @@ public class Utils {
     }
 
     /**
-     * Method to convert ISO language codes to language names (e.g. en -> English, es -> Español)
+     * Utility method to convert ISO language codes to language names (e.g. en -> English, es -> Español)
      * @param languageCode
      * @return language name
      */
@@ -108,6 +111,30 @@ public class Utils {
         language = language.substring(0, 1).toUpperCase() + language.substring(1);
 
         return language;
+    }
+
+    /**
+     * Utility method to convert date in format "yyyy-mm-dd" to "dd MMMM yyyy" format
+     * @param context
+     * @param inputDate
+     * @return formatted date
+     */
+    public static String getFormattedDate(Context context, String inputDate) {
+        String dateFormatted = "";
+
+        SimpleDateFormat inputFormat = new SimpleDateFormat(DATE_FORMAT_FROM, Locale.ENGLISH);
+        SimpleDateFormat newFormat = new SimpleDateFormat(DATE_FORMAT_TO, Locale.ENGLISH);
+
+        try {
+            Date date = inputFormat.parse(inputDate);
+            dateFormatted = newFormat.format(date);
+        }
+        catch(ParseException pe) {
+            Log.e(LOG_TAG, pe.toString());
+            dateFormatted = context.getString(R.string.error_no_release_date);
+        }
+
+        return dateFormatted;
     }
 
 }

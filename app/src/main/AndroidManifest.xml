@@ -19,7 +19,8 @@
                 <category android:name="android.intent.category.LAUNCHER"/>
             </intent-filter>
         </activity>
-        <activity android:name="com.example.android.popularmoviesstagetwo.MainActivity">
+        <activity android:name="com.example.android.popularmoviesstagetwo.MainActivity"
+                android:launchMode="singleTop">
         </activity>
         <activity
             android:name="com.example.android.popularmoviesstagetwo.DetailActivity"

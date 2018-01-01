@@ -19,8 +19,7 @@ import com.squareup.picasso.Picasso;
 import java.util.List;
 
 /**
- * {@link MovieListAdapter} creates a list of weather forecasts to a
- * {@link android.support.v7.widget.RecyclerView}
+ * {@link MovieListAdapter} creates a list of movie items to a {@link android.support.v7.widget.RecyclerView}
  *
  * Created by aditibhattacharya on 26/11/2017.
  */

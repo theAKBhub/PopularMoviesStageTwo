@@ -24,9 +24,9 @@ public class Movie implements Parcelable {
     );
 
     private static final String [] ARRAY_GENRES = new String[]{
-            "Adventure", "Fantasy", "Animation", "Drama", "Horror", "Action", "Comedy", "History", "Western",
-            "Thriller", "Crime", "Documentary", "Science Fiction", "Mystery", "Music", "Romance",
-            "Family", "War", "TV Movie"
+            "Adventure", "Fantasy", "Animation", "Drama", "Horror", "Action", "Comedy", "History",
+            "Western", "Thriller", "Crime", "Documentary", "Science Fiction", "Mystery", "Music",
+            "Romance", "Family", "War", "TV Movie"
     };
 
 

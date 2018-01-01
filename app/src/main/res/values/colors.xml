@@ -10,4 +10,5 @@
     <color name="colorSettingsBackground">#222222</color>
     <color name="colorBackground">#F1F1F1</color>
     <color name="colorBlackAlpha">#F2000000</color>
+    <color name="colorTabBackground">#1C96C4</color>
 </resources>

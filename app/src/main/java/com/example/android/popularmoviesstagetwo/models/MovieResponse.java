@@ -37,9 +37,7 @@ public class MovieResponse {
     /**
      * Empty constructor
      */
-    public MovieResponse() {
-
-    }
+    public MovieResponse() {}
 
     /**
      * Default Constructor - Constructs a new {@link MovieResponse} object

@@ -1,9 +1,10 @@
 <resources>
     <string name="app_name">Popular Movies</string>
     <string name="placeholder_dialog">Dialog</string>
+    <string name="placeholder_trailer">Trailer</string>
     <string name="title_load_error">Movie Load Error</string>
 
-    <!-- =======================    LABELS   ================================ -->
+    <!-- LABELS -->
 
     <string name="label_movie_image">Movie Poster</string>
     <string name="label_movies">%s Movies</string>
@@ -15,16 +16,17 @@
     <string name="label_vote_display">%.1f / 10</string>
 
 
-    <!-- =======================    MESSAGES   ================================ -->
+    <!-- MESSAGES -->
 
     <string name="error_movie_load">Failed to display popular movie list</string>
     <string name="error_movie_load_failed">Failed to load list of popular movies. Status Code \u003D </string>
     <string name="error_movie_fetch_failed">Failed to fetch list of popular movies</string>
     <string name="error_no_connection">Unfortunately your device doesn\u0027t have any internet connection.</string>
+    <string name="error_no_release_date">Release date unavailable</string>
     <string name="alert_api_key_missing">Oops! Looks like your API Key is missing</string>
 
 
-    <!-- =======================    SETTINGS   ================================ -->
+    <!-- SETTINGS -->
 
     <string name="settings_menu_item">Settings</string>
     <string name="settings_title">Movie Settings</string>
@@ -54,10 +56,16 @@
     <string name="contentdesc_movie_poster">Movie Poster</string>
 
 
-    <!-- ===========================    View Font Tags    =========================== -->
-
+    <!-- FONT TAGS -->
     <string name="tag_regular_roboto_cond">RegularRobotoCond</string>
     <string name="tag_light_roboto_cond">LightRobotoCond</string>
     <string name="tag_regular_noto">RegularNoto</string>
+
+
+    <!-- EXCEPTION MESSAGES -->
+    <string name="exception_unknown_uri">URI provided is unknown, and cannot be queried => %s</string>
+    <string name="exception_insert_failed">Failed to insert movie => %s</string>
+    <string name="exception_default_message">Not yet implemented</string>
+    <string name="exception_set_title_failed">Failed to set Action Bar title</string>
 
 </resources>
