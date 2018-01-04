@@ -4,11 +4,13 @@
     <color name="colorPrimaryDark">#0BAAE6</color>
     <color name="colorPrimaryLight">#BAEBFD</color>
     <color name="colorAccent">#FF2C69</color>
+    <color name="colorAccentDark">#E70747</color>
     <color name="colorPrimaryText">#212121</color>
     <color name="colorSecondaryText">#757575</color>
     <color name="colorSettingsPrimary">#000000</color>
     <color name="colorSettingsBackground">#222222</color>
-    <color name="colorBackground">#F1F1F1</color>
+    <color name="colorBackground">#EAE8E3</color>
+    <color name="colorListBackground">#E2DFD6</color>
     <color name="colorBlackAlpha">#F2000000</color>
     <color name="colorTabBackground">#1C96C4</color>
 </resources>

@@ -24,7 +24,8 @@
     <dimen name="tab_indicator_height">3dp</dimen>
     <dimen name="tab_padding">12dp</dimen>
 
-    <!-- Trailer Dimensions -->
-    <dimen name="trailer_size">60dp</dimen>
+    <!-- List Dimensions -->
+    <dimen name="trailer_list_height">60dp</dimen>
+    <dimen name="review_list_vertical_margin">8dp</dimen>
 
 </resources>

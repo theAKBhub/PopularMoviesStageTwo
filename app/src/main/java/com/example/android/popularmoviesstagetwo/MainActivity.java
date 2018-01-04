@@ -1,6 +1,5 @@
 package com.example.android.popularmoviesstagetwo;
 
-import android.app.Dialog;
 import android.content.Context;
 import android.content.Intent;
 import android.content.SharedPreferences;
@@ -15,9 +14,7 @@ import android.support.v7.widget.RecyclerView;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
-import android.widget.Button;
 import android.widget.ProgressBar;
-import android.widget.TextView;
 import android.widget.Toast;
 import com.example.android.popularmoviesstagetwo.adapters.MovieListAdapter;
 import com.example.android.popularmoviesstagetwo.controllers.MovieApiController;
@@ -26,6 +23,7 @@ import com.example.android.popularmoviesstagetwo.exceptions.NoConnectivityExcept
 import com.example.android.popularmoviesstagetwo.models.Movie;
 import com.example.android.popularmoviesstagetwo.models.MovieResponse;
 import com.example.android.popularmoviesstagetwo.utils.BuildConfig;
+import com.example.android.popularmoviesstagetwo.utils.UtilDialog;
 import com.example.android.popularmoviesstagetwo.utils.Utils;
 import java.util.List;
 import retrofit2.Call;
@@ -49,10 +47,6 @@ public class MainActivity extends AppCompatActivity implements
     private MovieListAdapter mMovieListAdapter;
     private ProgressBar mLoadingIndicator;
     private SwipeRefreshLayout mSwipeRefreshLayout;
-    private Dialog mDialog;
-    private TextView mTextViewDialogTitle;
-    private TextView mTextViewDialogCaption;
-    private Button mButtonDialog;
 
     private Movie mCurrentMovie;
     private boolean mIsDialogVisible = false;
@@ -65,7 +59,6 @@ public class MainActivity extends AppCompatActivity implements
 
         // Initialize views
         initializeUI();
-        setCustomTypeface();
 
         // Enable layout for SwipeRefresh
         mSwipeRefreshLayout.setOnRefreshListener(this);
@@ -107,21 +100,6 @@ public class MainActivity extends AppCompatActivity implements
         mRecyclerView = findViewById(R.id.recyclerview_movies);
         mSwipeRefreshLayout = findViewById(R.id.swipe_refresh_layout);
         mLoadingIndicator = findViewById(R.id.progress_indicator);
-
-        mDialog = new Dialog(mContext);
-        mDialog.setContentView(R.layout.dialog);
-        mTextViewDialogTitle = mDialog.findViewById(R.id.text_dialog_title);
-        mTextViewDialogCaption = mDialog.findViewById(R.id.text_dialog_caption);
-        mButtonDialog = mDialog.findViewById(R.id.button_dismiss_dialog);
-    }
-
-    /**
-     * Method to set custom font for views
-     */
-    public void setCustomTypeface() {
-        Utils.setCustomTypeface(mContext, mTextViewDialogCaption);
-        Utils.setCustomTypeface(mContext, mTextViewDialogTitle);
-        Utils.setCustomTypeface(mContext, mButtonDialog);
     }
 
     /**
@@ -154,7 +132,7 @@ public class MainActivity extends AppCompatActivity implements
     public void loadMovieData() {
 
         if (Utils.isEmptyString(BuildConfig.API_KEY)) {
-            displayDialog(getString(R.string.alert_api_key_missing));
+            mIsDialogVisible = UtilDialog.showDialog(getString(R.string.alert_api_key_missing), mContext);
             mSwipeRefreshLayout.setRefreshing(false);
             return;
         }
@@ -192,19 +170,19 @@ public class MainActivity extends AppCompatActivity implements
                         mMovieList = mMovieResponse.getMovieList();
                     } else {
                         mLoadingIndicator.setVisibility(View.INVISIBLE);
-                        displayDialog(getString(R.string.error_movie_load_failed) + statusCode);
+                        mIsDialogVisible = UtilDialog.showDialog(getString(R.string.error_movie_load_failed) + statusCode, mContext);
                     }
                 }
 
                 @Override
                 public void onFailure(Call<MovieResponse> call, Throwable t) {
                     mLoadingIndicator.setVisibility(View.INVISIBLE);
-                    displayDialog(getString(R.string.error_movie_fetch_failed));
+                    mIsDialogVisible = UtilDialog.showDialog(getString(R.string.error_movie_fetch_failed), mContext);
                 }
             });
         } catch (NoConnectivityException nce) {
             mLoadingIndicator.setVisibility(View.INVISIBLE);
-            displayDialog(getString(R.string.error_no_connection));
+            mIsDialogVisible = UtilDialog.showDialog(getString(R.string.error_no_connection), mContext);
         }
     }
 
@@ -272,21 +250,12 @@ public class MainActivity extends AppCompatActivity implements
         return super.onOptionsItemSelected(item);
     }
 
-    /**
-     * Method to display custom dialog
-     */
-    public void displayDialog(String dialogMessage) {
-        mTextViewDialogCaption.setText(dialogMessage);
-
-        mButtonDialog.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                mTextViewDialogCaption.setText("");
-                mDialog.dismiss();
-                mIsDialogVisible = false;
-            }
-        });
-        mDialog.show();
-        mIsDialogVisible = true;
+    @Override
+    protected void onDestroy() {
+        super.onDestroy();
+        if (mIsDialogVisible) {
+            UtilDialog.dismissDialog();
+            mIsDialogVisible = false;
+        }
     }
 }

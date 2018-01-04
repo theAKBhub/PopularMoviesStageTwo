@@ -2,6 +2,7 @@ package com.example.android.popularmoviesstagetwo.models;
 
 import android.os.Parcel;
 import android.os.Parcelable;
+import com.example.android.popularmoviesstagetwo.utils.BuildConfig;
 import com.google.gson.annotations.SerializedName;
 
 /**
@@ -149,6 +150,26 @@ public class MovieTrailer implements Parcelable {
     /** Setter method - Trailer Type */
     public void setTrailerType(String trailerType) {
         mTrailerType = trailerType;
+    }
+
+    /**
+     * Getter method for Video URL
+     * @param movieTrailer
+     * @return Video URL
+     */
+    public String getVideoUrl(MovieTrailer movieTrailer) {
+        return (movieTrailer.getTrailerSite().equals(BuildConfig.VIDEO_SITE_NAME)) ?
+                String.format(BuildConfig.BASE_VIDEO_URL, movieTrailer.getTrailerKey()) : null;
+    }
+
+    /**
+     * Getter method for Video Thumbnail Image URL
+     * @param movieTrailer
+     * @return Video Thumbnail Image URL
+     */
+    public String getVideoThumbImage(MovieTrailer movieTrailer) {
+        return (movieTrailer.getTrailerSite().equals(BuildConfig.VIDEO_SITE_NAME)) ?
+                String.format(BuildConfig.BASE_VIDEO__THUMB_URL, movieTrailer.getTrailerKey()) : null;
     }
 
     @Override

@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginBottom="@dimen/activity_margin"
+    android:paddingBottom="@dimen/activity_margin"
+    android:background="@color/colorListBackground">
+
+        <TextView
+            android:id="@+id/text_review_author"
+            style="@style/TextViewReviewAuthor"
+            tools:text="@string/placeholder_review_author"/>
+
+        <com.ms.square.android.expandabletextview.ExpandableTextView
+            xmlns:expandableTextView="http://schemas.android.com/apk/res-auto"
+            android:id="@+id/expand_view"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            expandableTextView:maxCollapsedLines="3"
+            expandableTextView:animDuration="200">
+
+                <TextView
+                    android:id="@+id/expandable_text"
+                    style="@style/TextViewReview"
+                    tools:text="@string/placeholder_review"/>
+
+                <ImageButton
+                    android:id="@+id/expand_collapse"
+                    style="@style/ButtonExpandCollapse"
+                    android:contentDescription="@string/label_read_more"/>
+
+        </com.ms.square.android.expandabletextview.ExpandableTextView>
+
+</LinearLayout>

@@ -1,7 +1,9 @@
 <resources>
     <string name="app_name">Popular Movies</string>
     <string name="placeholder_dialog">Dialog</string>
-    <string name="placeholder_trailer">Trailer</string>
+    <string name="placeholder_trailer">This is movie trailer</string>
+    <string name="placeholder_review">This is movie review</string>
+    <string name="placeholder_review_author">Author Name</string>
     <string name="title_load_error">Movie Load Error</string>
 
     <!-- LABELS -->
@@ -13,7 +15,9 @@
     <string name="label_movie_genre">Genre</string>
     <string name="label_movie_vote">Average Vote</string>
     <string name="label_ok">OK</string>
+    <string name="label_read_more">Read More</string>
     <string name="label_vote_display">%.1f / 10</string>
+    <string name="label_review_by">Review by %1$s</string>
 
 
     <!-- MESSAGES -->
@@ -21,9 +25,15 @@
     <string name="error_movie_load">Failed to display popular movie list</string>
     <string name="error_movie_load_failed">Failed to load list of popular movies. Status Code \u003D </string>
     <string name="error_movie_fetch_failed">Failed to fetch list of popular movies</string>
+    <string name="error_trailer_load_failed">Failed to load trailers for this movie. Status Code \u003D </string>
+    <string name="error_trailer_fetch_failed">Failed to fetch trailers for this movie</string>
+    <string name="error_review_load_failed">Failed to load reviews for this movie. Status Code \u003D </string>
+    <string name="error_review_fetch_failed">Failed to fetch reviews for this movie</string>
     <string name="error_no_connection">Unfortunately your device doesn\u0027t have any internet connection.</string>
     <string name="error_no_release_date">Release date unavailable</string>
-    <string name="alert_api_key_missing">Oops! Looks like your API Key is missing</string>
+    <string name="alert_api_key_missing">Oops! Looks like your API Key is missing\n</string>
+    <string name="alert_no_trailer">No trailers found for this movie</string>
+    <string name="alert_no_reviews">No reviews found for this movie</string>
 
 
     <!-- SETTINGS -->
@@ -67,5 +77,6 @@
     <string name="exception_insert_failed">Failed to insert movie => %s</string>
     <string name="exception_default_message">Not yet implemented</string>
     <string name="exception_set_title_failed">Failed to set Action Bar title</string>
+    <string name="exception_invalid_video_site">Video site is unknown. Only videos from YouTube are supported.</string>
 
 </resources>

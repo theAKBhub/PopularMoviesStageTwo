@@ -3,23 +3,30 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:orientation="horizontal"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:layout_margin="@dimen/activity_margin"
-    android:background="@color/colorBackground">
+    android:layout_height="@dimen/trailer_list_height"
+    android:layout_marginBottom="@dimen/activity_margin"
+    android:background="@color/colorListBackground">
 
         <ImageView
             android:id="@+id/image_trailer_thumb"
-            android:layout_width="@dimen/trailer_size"
-            android:layout_height="@dimen/trailer_size"
+            android:layout_width="@dimen/trailer_list_height"
+            android:layout_height="match_parent"
+            android:adjustViewBounds="true"
+            android:src="@drawable/no_image_placeholder"
+            android:scaleType="centerCrop"
             android:contentDescription="@string/placeholder_trailer" />
 
         <TextView
             android:id="@+id/text_trailer_name"
             android:layout_width="wrap_content"
-            android:layout_height="@dimen/trailer_size"
+            android:layout_height="match_parent"
             android:layout_marginLeft="@dimen/activity_margin"
             android:layout_marginStart="@dimen/activity_margin"
-            tools:text="@string/placeholder_trailer"
-            android:gravity="start|center_vertical"/>
+            android:gravity="start|center_vertical"
+            android:textColor="@color/colorPrimaryText"
+            android:textSize="@dimen/textsize_xsmall"
+            android:ellipsize="end"
+            android:tag="@string/tag_regular_noto"
+            tools:text="@string/placeholder_trailer" />
 
 </LinearLayout>

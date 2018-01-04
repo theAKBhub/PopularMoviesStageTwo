@@ -144,13 +144,49 @@
     </style>
 
     <style name="TextViewEmptyList">
-        <item name="android:layout_width">@dimen/dialog_height</item>
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:paddingLeft">@dimen/progressbar_dimen</item>
+        <item name="android:paddingRight">@dimen/progressbar_dimen</item>
         <item name="android:layout_height">wrap_content</item>
         <item name="android:layout_marginBottom">@dimen/activity_margin</item>
         <item name="android:textSize">@dimen/textsize_small</item>
-        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:textColor">@color/colorAccent</item>
         <item name="android:layout_centerInParent">true</item>
         <item name="android:gravity">center</item>
+        <item name="android:visibility">gone</item>
+    </style>
+
+    <style name="TextViewReviewAuthor">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/activity_margin</item>
+        <item name="android:paddingLeft">@dimen/activity_margin</item>
+        <item name="android:paddingRight">@dimen/activity_margin</item>
+        <item name="android:paddingBottom">@dimen/review_list_vertical_margin</item>
+        <item name="android:textSize">@dimen/textsize_xsmall</item>
+        <item name="android:textColor">@color/colorAccentDark</item>
+        <item name="android:fontFamily">sans-serif-condensed</item>
+    </style>
+
+    <style name="TextViewReview">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingLeft">@dimen/activity_margin</item>
+        <item name="android:paddingRight">@dimen/activity_margin</item>
+        <item name="android:textSize">@dimen/textsize_xsmall</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:tag">@string/tag_regular_noto</item>
+    </style>
+
+    <style name="ButtonExpandCollapse">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:paddingTop">@dimen/activity_margin</item>
+        <item name="android:paddingLeft">0dp</item>
+        <item name="android:paddingRight">@dimen/activity_margin</item>
+        <item name="android:layout_gravity">end|bottom</item>
+        <item name="android:textColor">@color/colorPrimaryText</item>
+        <item name="android:background">@android:color/transparent</item>
     </style>
 
 </resources>

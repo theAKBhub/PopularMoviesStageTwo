@@ -26,6 +26,15 @@ public class BuildConfig {
     // Backdrop Poster Base URL
     public final static String BACKDROP_POSTER_BASE_URL = "http://image.tmdb.org/t/p/w500/";
 
+    // Video Site Name
+    public final static String VIDEO_SITE_NAME = "YouTube";
+
+    // Video Site Base URL
+    public static final String BASE_VIDEO_URL = "http://www.youtube.com/watch?v=%1$s";
+
+    // Video Thumbnail Image Base URL
+    public static final String BASE_VIDEO__THUMB_URL = "http://img.youtube.com/vi/%1$s/0.jpg";
+
     // Duration in Milliseconds after which connection times out
     public static final int DURATION_CONNECTION_TIMEOUT = 10000;
 

@@ -12,10 +12,11 @@
         android:layout_height="match_parent">
 
         <android.support.v7.widget.RecyclerView
-            android:id="@+id/list_trailers"
+            android:id="@+id/list_reviews"
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="@dimen/activity_margin"/>
+
     </android.support.v4.widget.SwipeRefreshLayout>
 
     <!-- Empty view for scenario when list has no items -->
