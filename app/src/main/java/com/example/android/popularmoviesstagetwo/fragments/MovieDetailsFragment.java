@@ -111,5 +111,4 @@ public class MovieDetailsFragment extends Fragment {
         // Display Plot Synopsis
         mTextViewMovieOverview.setText(mMovie.getOverview());
     }
-
 }

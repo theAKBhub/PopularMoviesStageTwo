@@ -1,13 +1,14 @@
 <resources>
     <string name="app_name">Popular Movies</string>
+    <string name="title_favorites_activity">My Favorite Movies</string>
     <string name="placeholder_dialog">Dialog</string>
     <string name="placeholder_trailer">This is movie trailer</string>
     <string name="placeholder_review">This is movie review</string>
     <string name="placeholder_review_author">Author Name</string>
     <string name="title_load_error">Movie Load Error</string>
 
-    <!-- LABELS -->
 
+    <!-- LABELS -->
     <string name="label_movie_image">Movie Poster</string>
     <string name="label_movies">%s Movies</string>
     <string name="label_movie_date">Release Date</string>
@@ -18,26 +19,35 @@
     <string name="label_read_more">Read More</string>
     <string name="label_vote_display">%.1f / 10</string>
     <string name="label_review_by">Review by %1$s</string>
+    <string name="label_header_review">%1$s : REVIEWS</string>
+    <string name="label_header_trailer">%1$s : TRAILERS</string>
+
+
+    <!-- MENU -->
+    <string name="menu_label_add_favorites">Add to Favorite</string>
+    <string name="menu_label_show_favorites">Show Favorites</string>
 
 
     <!-- MESSAGES -->
-
     <string name="error_movie_load">Failed to display popular movie list</string>
     <string name="error_movie_load_failed">Failed to load list of popular movies. Status Code \u003D </string>
     <string name="error_movie_fetch_failed">Failed to fetch list of popular movies</string>
     <string name="error_trailer_load_failed">Failed to load trailers for this movie. Status Code \u003D </string>
     <string name="error_trailer_fetch_failed">Failed to fetch trailers for this movie</string>
+    <string name="error_favorites_load_failed">Failed to load favorite movies</string>
     <string name="error_review_load_failed">Failed to load reviews for this movie. Status Code \u003D </string>
     <string name="error_review_fetch_failed">Failed to fetch reviews for this movie</string>
     <string name="error_no_connection">Unfortunately your device doesn\u0027t have any internet connection.</string>
     <string name="error_no_release_date">Release date unavailable</string>
+    <string name="error_insert">Failed to add movie to favorites. Please try again.</string>
     <string name="alert_api_key_missing">Oops! Looks like your API Key is missing\n</string>
     <string name="alert_no_trailer">No trailers found for this movie</string>
     <string name="alert_no_reviews">No reviews found for this movie</string>
+    <string name="alert_no_favorites">You currently have no favorite movies.\n\nYou can start by adding a movie as favorite from its Detail screen.</string>
+    <string name="info_insert_successful">Movie marked as favorite</string>
 
 
     <!-- SETTINGS -->
-
     <string name="settings_menu_item">Settings</string>
     <string name="settings_title">Movie Settings</string>
 

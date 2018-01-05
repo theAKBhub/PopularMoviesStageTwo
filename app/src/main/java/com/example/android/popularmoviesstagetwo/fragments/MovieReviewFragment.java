@@ -76,7 +76,7 @@ public class MovieReviewFragment extends Fragment implements SwipeRefreshLayout.
         initRecyclerViewLayout();
 
         // Couple RecyclerView with Adapter
-        mAdapter = new ReviewAdapter(mMovieReviewResponse);
+        mAdapter = new ReviewAdapter(mMovieReviewResponse, mMovie);
         mRecyclerView.setAdapter(mAdapter);
 
         // Load list data
@@ -136,7 +136,7 @@ public class MovieReviewFragment extends Fragment implements SwipeRefreshLayout.
                         mLoadingIndicator.setVisibility(View.INVISIBLE);
                         mMovieReviewResponse = response.body();
                         mAdapter.setReviewData(mMovieReviewResponse);
-                        if (mAdapter.getItemCount() > 0) {
+                        if (mAdapter.getItemCount() > 1) {
                             mAdapter.notifyDataSetChanged();
                             mMovieReviewList = mMovieReviewResponse.getMovieReviewList();
                             mErrorMessage = "";

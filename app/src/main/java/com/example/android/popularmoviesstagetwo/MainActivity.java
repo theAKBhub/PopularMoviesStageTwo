@@ -231,6 +231,7 @@ public class MainActivity extends AppCompatActivity implements
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
         getMenuInflater().inflate(R.menu.main_menu, menu);
+        getMenuInflater().inflate(R.menu.menu_favorites, menu);
         return true;
     }
 
@@ -241,11 +242,14 @@ public class MainActivity extends AppCompatActivity implements
      */
     @Override
     public boolean onOptionsItemSelected(MenuItem item) {
-        int id = item.getItemId();
+        switch (item.getItemId()) {
+            case R.id.menu_settings:
+                startActivity(new Intent(this, SettingsActivity.class));
+                return true;
 
-        if (id == R.id.menu_settings) {
-            startActivity(new Intent(this, SettingsActivity.class));
-            return true;
+            case R.id.menu_show_favorites:
+                startActivity(new Intent(this, FavoritesActivity.class));
+                return true;
         }
         return super.onOptionsItemSelected(item);
     }

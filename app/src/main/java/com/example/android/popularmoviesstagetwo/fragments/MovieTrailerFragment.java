@@ -78,7 +78,7 @@ public class MovieTrailerFragment extends Fragment implements SwipeRefreshLayout
         initRecyclerViewLayout();
 
         // Couple RecyclerView with Adapter
-        mAdapter = new TrailerAdapter(mMovieTrailerResponse, this);
+        mAdapter = new TrailerAdapter(mMovieTrailerResponse, mMovie, this);
         mRecyclerView.setAdapter(mAdapter);
 
         // Load list data
