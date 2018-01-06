@@ -47,6 +47,7 @@
     <string name="alert_no_favorites">You currently have no favorite movies.\n\nYou can start by adding a movie as favorite from its Detail screen.</string>
     <string name="info_insert_successful">Movie marked as favorite</string>
     <string name="info_delete_successful">Selected movie removed from favorites</string>
+    <string name="info_already_favorite">This movie is already added to favorites</string>
 
 
     <!-- SETTINGS -->
