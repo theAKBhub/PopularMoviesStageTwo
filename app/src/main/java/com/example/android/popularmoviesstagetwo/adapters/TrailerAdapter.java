@@ -3,6 +3,7 @@ package com.example.android.popularmoviesstagetwo.adapters;
 import android.content.Context;
 import android.support.v7.widget.RecyclerView;
 import android.support.v7.widget.RecyclerView.ViewHolder;
+import android.util.Log;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
@@ -77,7 +78,7 @@ public class TrailerAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder
         @Override
         public void onClick(View view) {
             int adapterPosition = getAdapterPosition();
-            MovieTrailer movieTrailer = mMovieTrailerList.get(adapterPosition);
+            MovieTrailer movieTrailer = mMovieTrailerList.get(adapterPosition - 1);
             mClickHandler.onClick(movieTrailer);
         }
     }

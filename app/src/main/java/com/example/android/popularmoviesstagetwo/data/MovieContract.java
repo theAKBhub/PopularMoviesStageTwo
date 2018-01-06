@@ -45,13 +45,7 @@ public class MovieContract {
         // Column names
         public static final String COLUMN_MOVIE_ID = "movie_id";
         public static final String COLUMN_MOVIE_TITLE = "movie_title";
-        public static final String COLUMN_RELEASE_DATE = "release_date";
-        public static final String COLUMN_LANGUAGE = "original_language";
-        public static final String COLUMN_AVERAGE_VOTE = "average_vote";
-        public static final String COLUMN_OVERVIEW = "movie_overview";
         public static final String COLUMN_POSTER_PATH = "poster_path";
-        public static final String COLUMN_BACKDROP_PATH = "backdrop_path";
-        public static final String COLUMN_MOVIE_GENRES = "movie_genres";
         public static final String COLUMN_LAST_UPDATED = "last_updated";
     }
 

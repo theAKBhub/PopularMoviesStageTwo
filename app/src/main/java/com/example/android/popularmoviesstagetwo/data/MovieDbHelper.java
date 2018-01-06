@@ -40,14 +40,8 @@ public class MovieDbHelper extends SQLiteOpenHelper {
         final String SQL_CREATE_TABLE = "CREATE TABLE "  + MoviesEntry.TABLE_NAME + " (" +
                 MoviesEntry._ID                     + TYPE_INTEGER      + ATTR_PRIMARY_KEY      + COMMA_SEP +
                 MoviesEntry.COLUMN_MOVIE_ID         + TYPE_INTEGER      + ATTR_NOT_NULL         + COMMA_SEP +
-                MoviesEntry.COLUMN_MOVIE_TITLE      + TYPE_TEXT         + ATTR_NOT_NULL         + COMMA_SEP +
-                MoviesEntry.COLUMN_RELEASE_DATE     + TYPE_TEXT         + ATTR_NOT_NULL         + COMMA_SEP +
-                MoviesEntry.COLUMN_LANGUAGE         + TYPE_TEXT         + ATTR_NOT_NULL         + COMMA_SEP +
-                MoviesEntry.COLUMN_AVERAGE_VOTE     + TYPE_TEXT         + ATTR_NOT_NULL         + COMMA_SEP +
-                MoviesEntry.COLUMN_OVERVIEW         + TYPE_TEXT         + ATTR_NOT_NULL         + COMMA_SEP +
                 MoviesEntry.COLUMN_POSTER_PATH      + TYPE_TEXT         + ATTR_NOT_NULL         + COMMA_SEP +
-                MoviesEntry.COLUMN_BACKDROP_PATH    + TYPE_TEXT         + ATTR_NOT_NULL         + COMMA_SEP +
-                MoviesEntry.COLUMN_MOVIE_GENRES     + TYPE_TEXT         + ATTR_NOT_NULL         + COMMA_SEP +
+                MoviesEntry.COLUMN_MOVIE_TITLE      + TYPE_TEXT         + ATTR_NOT_NULL         + COMMA_SEP +
                 MoviesEntry.COLUMN_LAST_UPDATED     + TYPE_TIMESTAMP    + ATTR_NOT_NULL         + "  DEFAULT CURRENT_TIMESTAMP);";
 
         // Execute the SQL statement

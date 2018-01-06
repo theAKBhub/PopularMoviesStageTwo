@@ -40,11 +40,13 @@
     <string name="error_no_connection">Unfortunately your device doesn\u0027t have any internet connection.</string>
     <string name="error_no_release_date">Release date unavailable</string>
     <string name="error_insert">Failed to add movie to favorites. Please try again.</string>
+    <string name="error_delete">Failed to remove movie from favorites. Please try again.</string>
     <string name="alert_api_key_missing">Oops! Looks like your API Key is missing\n</string>
     <string name="alert_no_trailer">No trailers found for this movie</string>
     <string name="alert_no_reviews">No reviews found for this movie</string>
     <string name="alert_no_favorites">You currently have no favorite movies.\n\nYou can start by adding a movie as favorite from its Detail screen.</string>
     <string name="info_insert_successful">Movie marked as favorite</string>
+    <string name="info_delete_successful">Selected movie removed from favorites</string>
 
 
     <!-- SETTINGS -->

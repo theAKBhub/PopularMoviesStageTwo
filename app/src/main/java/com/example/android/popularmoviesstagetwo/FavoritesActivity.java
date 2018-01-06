@@ -56,6 +56,8 @@ public class FavoritesActivity extends AppCompatActivity implements LoaderManage
 
             @Override
             public void onSwiped(RecyclerView.ViewHolder viewHolder, int direction) {
+                int numRowDeleted = 0;
+
                 // get id of the list item to delete
                 int id = (int) viewHolder.itemView.getTag();
 
@@ -65,7 +67,12 @@ public class FavoritesActivity extends AppCompatActivity implements LoaderManage
                 uri = uri.buildUpon().appendPath(stringId).build();
 
                 // delete a single row using the uri
-                getContentResolver().delete(uri, null, null);
+                numRowDeleted = getContentResolver().delete(uri, null, null);
+                if (numRowDeleted == 1) {
+                    Utils.showToastMessage(mContext, mToast, getString(R.string.info_delete_successful)).show();
+                } else {
+                    Utils.showToastMessage(mContext, mToast, getString(R.string.error_delete)).show();
+                }
 
                 // restart the loader to re-query for all tasks after a deletion
                 getSupportLoaderManager().restartLoader(LOADER_ID, null, FavoritesActivity.this);

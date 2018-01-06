@@ -51,6 +51,13 @@ public class DetailActivity extends AppCompatActivity {
         ViewPager viewPager = findViewById(R.id.viewpager);
         viewPager.setAdapter(new FragmentAdapter(getSupportFragmentManager(), DetailActivity.this));
         mTabLayout.setupWithViewPager(viewPager);
+
+
+
+
+
+
+
     }
 
     /**
@@ -60,7 +67,7 @@ public class DetailActivity extends AppCompatActivity {
      */
     @Override
     public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_add_bookmark, menu);
+        getMenuInflater().inflate(R.menu.menu_add_favorite, menu);
         return true;
     }
 
@@ -88,13 +95,7 @@ public class DetailActivity extends AppCompatActivity {
         ContentValues values = new ContentValues();
         values.put(MoviesEntry.COLUMN_MOVIE_ID, sCurrentMovie.getId());
         values.put(MoviesEntry.COLUMN_MOVIE_TITLE, sCurrentMovie.getTitle());
-        values.put(MoviesEntry.COLUMN_RELEASE_DATE, sCurrentMovie.getReleaseDate());
-        values.put(MoviesEntry.COLUMN_LANGUAGE, sCurrentMovie.getLanguage());
-        values.put(MoviesEntry.COLUMN_AVERAGE_VOTE, sCurrentMovie.getVote());
-        values.put(MoviesEntry.COLUMN_OVERVIEW, sCurrentMovie.getOverview());
         values.put(MoviesEntry.COLUMN_POSTER_PATH, sCurrentMovie.getPosterPath());
-        values.put(MoviesEntry.COLUMN_BACKDROP_PATH, sCurrentMovie.getBackdropPath());
-        values.put(MoviesEntry.COLUMN_MOVIE_GENRES, sCurrentMovie.getGenres(sCurrentMovie.getGenreIds()));
 
         try {
             uri = getContentResolver().insert(MoviesEntry.CONTENT_URI, values);

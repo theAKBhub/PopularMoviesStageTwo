@@ -5,7 +5,7 @@
     android:layout_width="match_parent"
     android:layout_height="@dimen/trailer_list_height"
     android:layout_marginBottom="@dimen/activity_margin"
-    android:background="@color/colorListBackground">
+    android:background="@drawable/list_selector">
 
         <ImageView
             android:id="@+id/image_trailer_thumb"

@@ -7,7 +7,7 @@
     android:layout_height="wrap_content"
     android:layout_marginBottom="@dimen/activity_margin"
     android:paddingBottom="@dimen/activity_margin"
-    android:background="@color/colorListBackground">
+    android:background="@drawable/list_selector">
 
         <TextView
             android:id="@+id/text_review_author"
