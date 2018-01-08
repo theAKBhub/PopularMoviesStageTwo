@@ -14,7 +14,7 @@ The app uses TMDb API to get the list of movies.
 <p><a href="http://square.github.io/retrofit/" target="_blank">Retrofit</a><br/>
 <a href="http://square.github.io/okhttp/" target="_blank">OkHttp</a><br/>
 <a href="http://square.github.io/picasso/" target="_blank">Picasso</a></br>
-<a href="http://jakewharton.github.io/butterknife/">Butterknife</p></br>
+<a href="http://jakewharton.github.io/butterknife/">Butterknife</br>
 <a href="https://github.com/Manabu-GT/ExpandableTextView">Expandable TextView</p>
 
 
@@ -24,11 +24,28 @@ The app uses TMDb API to get the list of movies.
 
 <img src="https://user-images.githubusercontent.com/22053146/33524954-af3f9790-d81d-11e7-872b-5dc5917c03c6.jpg" 
 data-canonical-src="https://user-images.githubusercontent.com/22053146/33524954-af3f9790-d81d-11e7-872b-5dc5917c03c6.jpg" 
-width="300" height="470" /> 
+width="270" height="450" /> 
 <img src="https://user-images.githubusercontent.com/22053146/33524970-d2d61e90-d81d-11e7-8d02-c948e188dbb1.jpg" 
 data-canonical-src="https://user-images.githubusercontent.com/22053146/33524970-d2d61e90-d81d-11e7-8d02-c948e188dbb1.jpg" 
-width="300" height="470" />
+width="270" height="450" />
 <img src="https://user-images.githubusercontent.com/22053146/33524970-d2d61e90-d81d-11e7-8d02-c948e188dbb1.jpg" 
 data-canonical-src="https://user-images.githubusercontent.com/22053146/33524970-d2d61e90-d81d-11e7-8d02-c948e188dbb1.jpg" 
-width="300" height="470" />
+width="270" height="450" />
+
+<img src="https://user-images.githubusercontent.com/22053146/34667262-34a1b1f8-f460-11e7-97f4-8c35f06aa765.jpg" 
+data-canonical-src="https://user-images.githubusercontent.com/22053146/34667262-34a1b1f8-f460-11e7-97f4-8c35f06aa765.jpg" 
+width="270" height="450" /> 
+<img src="https://user-images.githubusercontent.com/22053146/34667285-55b1ac72-f460-11e7-8e1d-ae63eb138101.jpg" 
+data-canonical-src="https://user-images.githubusercontent.com/22053146/34667285-55b1ac72-f460-11e7-8e1d-ae63eb138101.jpg" 
+width="270" height="450" />
+<img src="https://user-images.githubusercontent.com/22053146/34667355-9809516a-f460-11e7-9505-02b5f0d61157.jpg" 
+data-canonical-src="https://user-images.githubusercontent.com/22053146/34667355-9809516a-f460-11e7-9505-02b5f0d61157.jpg" 
+width="270" height="450" />
+
+<img src="https://user-images.githubusercontent.com/22053146/34667382-b0328e96-f460-11e7-94a5-3355cd51bd66.jpg" 
+data-canonical-src="https://user-images.githubusercontent.com/22053146/34667382-b0328e96-f460-11e7-94a5-3355cd51bd66.jpg" 
+width="270" height="450" />
+<img src="https://user-images.githubusercontent.com/22053146/34667418-c72fef4e-f460-11e7-9780-53a4db3c434e.jpg" 
+data-canonical-src="https://user-images.githubusercontent.com/22053146/34667418-c72fef4e-f460-11e7-9780-53a4db3c434e.jpg" 
+width="270" height="450" />
 
