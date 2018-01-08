@@ -22,18 +22,9 @@ The app uses TMDb API to get the list of movies.
 
 #### Screenshots
 
-<img src="https://user-images.githubusercontent.com/22053146/33524954-af3f9790-d81d-11e7-872b-5dc5917c03c6.jpg" data-canonical-src="https://user-images.githubusercontent.com/22053146/33524954-af3f9790-d81d-11e7-872b-5dc5917c03c6.jpg" />
-
-<img src="https://user-images.githubusercontent.com/22053146/33524954-af3f9790-d81d-11e7-872b-5dc5917c03c6.jpg" 
+<a href="https://user-images.githubusercontent.com/22053146/33524954-af3f9790-d81d-11e7-872b-5dc5917c03c6.jpg"><img src="https://user-images.githubusercontent.com/22053146/33524954-af3f9790-d81d-11e7-872b-5dc5917c03c6.jpg" 
 data-canonical-src="https://user-images.githubusercontent.com/22053146/33524954-af3f9790-d81d-11e7-872b-5dc5917c03c6.jpg" 
-width="440" height="727" /> 
-<img src="https://user-images.githubusercontent.com/22053146/33524970-d2d61e90-d81d-11e7-8d02-c948e188dbb1.jpg" 
-data-canonical-src="https://user-images.githubusercontent.com/22053146/33524970-d2d61e90-d81d-11e7-8d02-c948e188dbb1.jpg" 
-width="440" height="727" /> 
-
-<img src="https://user-images.githubusercontent.com/22053146/33524954-af3f9790-d81d-11e7-872b-5dc5917c03c6.jpg" 
-data-canonical-src="https://user-images.githubusercontent.com/22053146/33524954-af3f9790-d81d-11e7-872b-5dc5917c03c6.jpg" 
-width="270" height="450" /> 
+width="270" height="450" /></a> 
 <img src="https://user-images.githubusercontent.com/22053146/33524970-d2d61e90-d81d-11e7-8d02-c948e188dbb1.jpg" 
 data-canonical-src="https://user-images.githubusercontent.com/22053146/33524970-d2d61e90-d81d-11e7-8d02-c948e188dbb1.jpg" 
 width="270" height="450" />
