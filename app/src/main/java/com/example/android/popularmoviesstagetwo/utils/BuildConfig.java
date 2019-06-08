@@ -41,5 +41,4 @@ public class BuildConfig {
     // Intent Extra keys
     public static final String INTENT_EXTRA_KEY_MOVIE = "Movie";
     public static final String INTENT_EXTRA_KEY_TITLE = "ActionBar Title";
-
 }
