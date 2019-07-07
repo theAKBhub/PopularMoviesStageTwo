@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:background="@color/colorBackground">
 
-    <android.support.v4.widget.SwipeRefreshLayout
+    <androidx.core.widget.SwipeRefreshLayout
         android:id="@+id/swipe_refresh_layout"
         android:layout_width="match_parent"
         android:layout_height="match_parent">
@@ -16,7 +16,7 @@
             android:layout_width="match_parent"
             android:layout_height="match_parent"
             android:padding="@dimen/activity_margin"/>
-    </android.support.v4.widget.SwipeRefreshLayout>
+    </androidx.core.widget.SwipeRefreshLayout>
 
     <!-- Empty view for scenario when list has no items -->
     <TextView
